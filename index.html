@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fr3$h Mixes Academy | Bartending School</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #222;
+    }
+    header {
+      background: #1a1a1a;
+      color: #fff;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #f1f1f1;
+      padding: 10px 0;
+      flex-wrap: wrap;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #1a1a1a;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      padding: 80px 40px;
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 60px 40px;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    .footer {
+      background: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    .social-links a {
+      margin: 0 10px;
+      color: #0072ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      font-size: 1rem;
+    }
+    form button {
+      background: #0072ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .testimonial {
+      background: #f9f9f9;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-left: 5px solid #0072ff;
+    }
+    .calendar-embed, .paypal-button {
+      margin-top: 30px;
+    }
+    .gallery-slider {
+      display: flex;
+      overflow-x: auto;
+      gap: 15px;
+    }
+    .gallery-slider img {
+      width: 300px;
+      height: auto;
+      border-radius: 10px;
+    }
+    .newsletter-form input[type="email"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+    .newsletter-form button {
+      background-color: #0072ff;
+      color: #fff;
+      padding: 10px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Fr3$h Mixes Academy</h1>
+    <p>Your path to becoming a certified bartender starts here</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#book">Book a Class</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#newsletter">Newsletter</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Shake Up Your Career</h1>
+    <p>Hands-on bartending courses with real-world training, tools, and tips from industry pros.</p>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Fr3$h Mixes</h2>
+    <p>Fr3$h Mixes Academy was founded to provide a fun, professional, and empowering space for aspiring bartenders. Whether you're new or looking to sharpen your skills, we’ve got you covered.</p>
+  </section>
+
+  <section class="section" id="courses">
+    <h2>Our Courses</h2>
+    <ul>
+      <li>2-Week Bartender Certification</li>
+      <li>Intro to Mixology</li>
+      <li>Responsible Alcohol Service (SC-specific)</li>
+      <li>Customer Service & Bar Etiquette</li>
+    </ul>
+  </section>
+
+  <section class="section" id="gallery">
+    <h2>Class Vibes & Student Spotlights</h2>
+    <p>Photos and videos coming soon! Follow us on social media for previews.</p>
+    <div class="social-links">
+      <a href="https://instagram.com/fr3shmixesacademy" target="_blank">Instagram</a>
+      <a href="https://tiktok.com/@fr3shmixesacademy" target="_blank">TikTok</a>
+      <a href="https://facebook.com/fr3shmixesacademy" target="_blank">Facebook</a>
+    </div>
+    <div class="gallery-slider">
+      <img src="https://via.placeholder.com/300x200?text=Class+1" alt="Class 1">
+      <img src="https://via.placeholder.com/300x200?text=Class+2" alt="Class 2">
+      <img src="https://via.placeholder.com/300x200?text=Class+3" alt="Class 3">
+    </div>
+  </section>
+
+  <section class="section" id="book">
+    <h2>Book a Class</h2>
+    <p>Use the form below to request a spot in an upcoming class, or use our calendar to book directly.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="class" placeholder="Class you're interested in" required>
+      <textarea name="message" placeholder="Questions or comments?"></textarea>
+      <button type="submit">Submit Booking Request</button>
+    </form>
+    <div class="calendar-embed">
+      <iframe src="https://calendly.com/fr3shmixesacademy" width="100%" height="600" frameborder="0"></iframe>
+    </div>
+    <p>Payments accepted:</p>
+    <ul>
+      <li>Cash App: $Fr3shMixes</li>
+      <li>PayPal: fr3shmixesacademy@gmail.com</li>
+    </ul>
+    <div class="paypal-button">
+      <a href="https://www.paypal.me/fr3shmixesacademy" target="_blank">
+        <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="Pay with PayPal">
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="testimonials">
+    <h2>What Our Students Say</h2>
+    <div class="testimonial">
+      <p>"This class was everything I needed to feel confident behind the bar. LaQuinta is the truth!" – Jamie T.</p>
+    </div>
+    <div class="testimonial">
+      <p>"Professional, fun, and hands-on. I walked out job-ready." – Marcus D.</p>
+    </div>
+    <div class="testimonial">
+      <p>"The best investment I've made in myself all year." – Candice L.</p>
+    </div>
+  </section>
+
+  <section class="section" id="newsletter">
+    <h2>Join Our Mailing List</h2>
+    <form class="newsletter-form" action="https://formspree.io/f/your-newsletter-form-id" method="POST">
+      <input type="email" name="email" placeholder="Enter your email to stay updated" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: fr3shmixesacademy@gmail.com</p>
+    <p>Phone: 803-944-8258</p>
+    <p>Charleston, SC</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Fr3$h Mixes Academy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
